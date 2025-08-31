@@ -10,7 +10,8 @@ import {
   Briefcase, 
   CheckCircle, 
   BarChart3, 
-  TrendingUp 
+  TrendingUp,
+  FileText
 } from 'lucide-react';
 
 const resultadosCards = [
@@ -83,6 +84,13 @@ const resultadosCards = [
     icon: TrendingUp,
     href: '/resultados/nps',
     color: 'bg-pink-50 text-pink-600'
+  },
+  {
+    title: 'Observações',
+    description: 'Diagnósticos e ações quinzenais',
+    icon: FileText,
+    href: '/resultados/observacoes',
+    color: 'bg-indigo-50 text-indigo-600'
   }
 ];
 

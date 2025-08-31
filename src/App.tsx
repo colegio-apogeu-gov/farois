@@ -17,6 +17,7 @@ import { InfraestruturasPage } from './pages/resultados/InfraestruturasPage';
 import { VagasAbertasPage } from './pages/resultados/VagasAbertasPage';
 import { RotinaPage } from './pages/resultados/RotinaPage';
 import { FrequenciaPage } from './pages/resultados/FrequenciaPage';
+import { ObservacoesPage } from './pages/resultados/ObservacoesPage';
 
 function ProtectedRoute({ children }: { children: React.ReactNode }) {
   const { user, loading } = useAuth();
@@ -114,6 +115,11 @@ function AppRoutes() {
       <Route path="/resultados/nps" element={
         <ProtectedRoute>
           <NPSPage />
+        </ProtectedRoute>
+      } />
+      <Route path="/resultados/observacoes" element={
+        <ProtectedRoute>
+          <ObservacoesPage />
         </ProtectedRoute>
       } />
       <Route path="/resultados/*" element={
